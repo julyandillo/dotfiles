@@ -10,6 +10,7 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.clipboard = "unnamedplus"
 
+
 -- =========================
 -- Gestor de plugins: lazy.nvim
 -- =========================
@@ -47,7 +48,22 @@ require("lazy").setup({
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
   -- Sintaxis avanzada
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        ensure_installed = { "lua", "bash", "hyprlang" }, -- lenguajes que quieres
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlighting = false,
+        },
+      })
+    end,
+  },
 
 })
 
+vim.filetype.add({
+    pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
