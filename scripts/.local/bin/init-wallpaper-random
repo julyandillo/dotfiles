@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Carpeta donde tienes los wallpapers
+WALLPAPER_DIR="$HOME/wallpapers"
+
+# Archivo de configuración de hyprpaper
+CONFIG_FILE="$HOME/.config/hypr/hyprpaper.conf"
+
+# Selecciona una imagen aleatoria
+RANDOM_WALL=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+
+# Crea la carpeta de configuración si no existe
+mkdir -p "$(dirname "$CONFIG_FILE")"
+
+# Genera el archivo de configuración
+cat > "$CONFIG_FILE" <<EOF
+preload = $RANDOM_WALL
+wallpaper = ,$RANDOM_WALL
+EOF
