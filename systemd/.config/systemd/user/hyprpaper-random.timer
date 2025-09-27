@@ -1,0 +1,10 @@
+[Unit]
+Description=Ejecuta cambio de wallpaper cada 30 minutos
+
+[Timer]
+OnBootSec=30min
+OnUnitActiveSec=30min
+Unit=hyprpaper-random.service
+
+[Install]
+WantedBy=timers.target
