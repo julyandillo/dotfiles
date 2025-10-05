@@ -9,7 +9,7 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.clipboard = "unnamedplus"
-
+vim.o.directory = "/tmp//"  -- cambia el swap file a la carpeta /tmp, la doble barra // hace que siga la misma estructura de directorios para evitar conflictos con nombres de archivos iguales
 
 -- =========================
 -- Gestor de plugins: lazy.nvim
