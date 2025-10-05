@@ -151,9 +151,6 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -167,8 +164,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "   {signalStrength}%",
-        "tooltip-format-wifi": "{essid} {frequency} GHz | {ipaddr}",
+        "format-wifi": " ",
+        "tooltip-format-wifi": "{essid} {frequency} GHz {signalStrength}% | {ipaddr}",
         "format-ethernet": "",
         "tooltip-format-ethernet": "{ifname} {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",

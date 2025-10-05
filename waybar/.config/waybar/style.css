@@ -1,9 +1,9 @@
 @import "mocha.css";
 
 * {
-  font-family: FantasqueSans Nerd Font;
-  font-size: .95rem;
-  font-weight: 600;
+  font-family: "SF Pro Display";
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 #waybar {
@@ -17,6 +17,7 @@
   border-radius: .5rem;
   background-color: @surface2;
   margin-top: .25rem;
+  font-weight: 600;
 }
 
 #workspaces button {
@@ -81,6 +82,7 @@ window#waybar.empty #window {
 
 #battery.charging {
   color: @green;
+  font-family: "Font Awesome 7 Free";
 }
 
 #battery.warning:not(.charging) {
