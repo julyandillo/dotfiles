@@ -212,7 +212,8 @@
     "custom/power": {
         "format" : "{icon}",
 		"tooltip": false,
-        "on-click": "sh -c 'systemctl poweroff'",
+        "on-click": "systemctl -i poweroff",
+        "interval": 0,
         "format-icons": {
             "default": ""
         }
@@ -220,7 +221,8 @@
     "custom/reboot": {
         "format": "{icon}",
         "tooltip": false,
-        "on-click": "sh -c 'systemctl reboot'",
+        "on-click": "systemctl reboot",
+        "interval": 0,
         "format-icons": {
             "default": ""
         }
@@ -234,9 +236,9 @@
      "hyprland/workspaces": {
          "format": "{icon}",
          "persistent-workspaces": {
-            "*": 5,
-            "eDP-1": [1,2,3,4,5]
-            // "HMDI-A-1": [5,6,7,8]
+            "*": 4
+            //"eDP-1": [1,2,3,4],
+            //"HMDI-A-1": [5,6,7,8]
         }
     }
 }
