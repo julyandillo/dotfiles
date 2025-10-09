@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# Alterna entre solo monitor externo y ambos monitores activos en Hyprland
+#
+
+INTERNAL="eDP-1"
+EXTERNAL="DP-1"
+
+# Detectar si el monitor interno está deshabilitado
+if hyprctl monitors all | grep -q "$INTERNAL" | grep -q "disabled: true"; then
+    echo "→ Activando ambos monitores..."
+
+    # Habilita la pantalla del portátil y coloca la externa a la derecha
+    hyprctl keyword monitor "$INTERNAL,2880x1800@120,0x0,2"
+    hyprctl keyword monitor "$EXTERNAL,3840x2160@60,2880x0,1.5"
+
+else
+    echo "→ Usando solo monitor externo..."
+
+    # Desactiva la pantalla del portátil y deja solo la externa
+    hyprctl keyword monitor "$INTERNAL,disable"
+    hyprctl keyword monitor "$EXTERNAL,3840x2160@60,0x0,1.5"
+fi
+
