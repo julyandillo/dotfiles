@@ -1,126 +1,102 @@
 @import "mocha.css";
-
 * {
-  font-family: "SF Pro Display";
-  font-size: .9rem;
-  font-weight: 500;
+    font-family: "FantasqueSans Nerd Font", "Font Awesome 5 Free", "Font Awesome 6 Free Solid";
+    font-size: .95rem;
+    font-weight: 500;
 }
-
 #waybar {
-  color: @text;
-  margin-top: 0;
-  padding: 0;
-  background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
 }
-
 #workspaces {
-  border-radius: .5rem;
-  background-color: @surface2;
-  margin-top: .25rem;
-  font-weight: 600;
+    border-radius: .5rem;
+    background-color: rgba(15, 27, 53, 0.9);
+    margin-top: .25rem;
+    font-weight: 600;
+    margin-left: .5rem;
 }
-
 #workspaces button {
-  color: @lavender;
-  border-radius: .75rem;
-  padding: .15rem .35rem;
+    color: @lavender;
+    border-radius: .75rem;
+    padding: .15rem .35rem;
 }
-
 #workspaces button.active {
-  color: @green;
-  border-radius: .75rem;
+    color: @green;
+    background-color: rgba(15, 27, 53);
+    font-weight: 600;
 }
-
 #workspaces button:hover {
-  color: @sapphire;
-  border-radius: .85rem;
+    color: @sapphire;
+    border-radius: .85rem;
 }
-
 #custom-music,
 #tray,
 #backlight,
 #clock,
 #battery,
 #pulseaudio,
-#custom-lock,
-#custom-power,
-#custom-wlogout,
-#network, 
+#network,
 #power-profiles-daemon,
 #idle_inhibitor,
 #custom-reboot,
+#custom-power,
 #window,
 #cpu {
-    background-color: @surface2;
-    padding: .15rem .5rem;
-    margin-top: .25rem;
+    background-color: rgba(15, 27, 53, 0.9);
+    padding: .15rem .35rem;
+    margin-top: .2rem;
+    color: @rosewater;
 }
-
 #window {
-    background-color: @surface2;
-    color: @flamingo;
+    background-color: rgba(15, 27, 53, 0.9);
+    color: @rosewater;
     border-radius: .5rem;
     margin-left: .5rem;
     padding: .15rem 1rem;
+    font-size: .9rem;
 }
-
 window#waybar.empty #window {
     background-color: transparent;
 }
 
-#power-profiles-daemon {
-    color: @yellow;
-}
-
 #clock {
-  color: @blue;
+    color: @text;
+    border-radius: .5rem;
+    padding: .15rem .5rem;
+    margin-left: .25rem;
 }
-
+#tray {
+    border-radius: 0 .5rem .5rem 0;
+    padding-right: .65rem;
+}
 #battery.critical:not(.charging) {
-  color: @red;
+    color: @red;
 }
-
 #battery.charging {
-  color: @green;
-  font-family: "Font Awesome 7 Free";
+    color: @green;
 }
-
 #battery.warning:not(.charging) {
-  color: @rosewater;
+    color: @peach;
 }
-
-#backlight {
-  color: @yellow;
-}
-
-#backlight, #battery {
-    border-radius: 0;
-}
-
-#pulseaudio {
-  color: @mauve; 
-}
-
 #idle_inhibitor {
-    color: @lavender;
-    padding-left: 1rem;
-    padding-right: .75rem;
     border-radius: .5rem 0 0 .5rem;
+    padding-left: .65rem;
 }
-
 #custom-reboot {
     color: @peach;
     font-size: 1rem;
+    margin-left: .25rem;
+    border-radius: .5rem 0 0 .5rem;
+    padding-left: .65rem;
+    padding-right: .4rem;
 }
-
-#custom-power, #custon-wlogout {
+#custom-power {
     margin-right: .5rem;
     color: @red;
     font-size: 1rem;
-    border-radius: 0 .5rem .5rem 0; 
+    border-radius: 0 .5rem .5rem 0;
     padding-right: .75rem;
-}
-
-#network {
-    color: @flamingo;
 }
