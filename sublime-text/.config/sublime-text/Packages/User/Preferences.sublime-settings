@@ -1,0 +1,28 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"theme": "ayu-dark.sublime-theme",
+	"color_scheme": "ayu-dark.sublime-color-scheme",
+	"ui_native_titlebar": true,
+	"ui_separator": true,
+	"hot_exit": "disabled",
+	"font_face": "Fira Code",
+	"font_options": ["no_liga", "no_clig"],
+	"rulers": [120],
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+	"caret_style": "blink",
+	"highlight_line": true,
+	"caret_extra_top": 1,
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 1,
+	"trim_trailing_white_space_on_save": "all",
+	"auto_hide_menu": true,
+	"highlight_modified_tabs": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"hardware_acceleration": "opengl"
+}
