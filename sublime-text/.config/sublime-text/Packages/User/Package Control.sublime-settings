@@ -3,8 +3,15 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"AdvancedNewFile",
 		"ayu",
+		"BracketHighlighter",
+		"CodeFormatter",
+		"Emmet",
+		"Gutter Color",
 		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-json",
 	],
 	"in_process_packages":
 	[

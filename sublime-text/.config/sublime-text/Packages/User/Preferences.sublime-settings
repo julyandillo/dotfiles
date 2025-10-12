@@ -9,7 +9,7 @@
 	"ui_native_titlebar": true,
 	"ui_separator": true,
 	"hot_exit": "disabled",
-	"font_face": "Fira Code",
+	"font_face": "FiraCode Nerd Font",
 	"font_options": ["no_liga", "no_clig"],
 	"rulers": [120],
 	"draw_minimap_border": true,
@@ -24,5 +24,6 @@
 	"highlight_modified_tabs": true,
 	"show_encoding": true,
 	"show_line_endings": true,
-	"hardware_acceleration": "opengl"
+	"hardware_acceleration": "opengl",
+	"font_size": 10,
 }
