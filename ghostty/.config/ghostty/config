@@ -1,3 +1,5 @@
+shell-integration = fish
+
 theme = Ayu
 
 font-family = JetBrainsMono Nerd Font
