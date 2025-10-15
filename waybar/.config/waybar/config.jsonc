@@ -9,7 +9,6 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/window"
-        //"hyprland/window",
         //"sway/mode",
         //"sway/scratchpad",
         //"custom/media"
@@ -163,6 +162,9 @@
     },
     "hyprland/window": {
         "format": "{initialTitle}",
+        "rewrite": {
+            "DBeaver (.*)": "DBeaver"
+        },
         "separate-outputs": true,
         "icon": true,
         "icon-size": 14
